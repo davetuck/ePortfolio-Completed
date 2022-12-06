@@ -232,14 +232,31 @@ nav {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .img-large {
     height: 90%;
-    width: 100%;
+    width: calc(100% / 3);
     margin-top: 40px;
     animation: fade-in 1200ms 800ms backwards;
 }
+
+.img-large__1 {
+    height: 50%;
+    margin-top: 0;
+}
+
+.img-large__2 {
+    height: 50%;
+    margin-top: 140px;
+}
+
+.img-large__3 {
+    height: 50%;
+    margin-top: 280px;
+}
+
 
 @keyframes fade-in {
     0% {
@@ -477,6 +494,18 @@ footer {
         left: 30px;
         padding-right: 60px;
     }
+    .img-large {
+        width: 50%;
+    }
+    .img-large__1 {
+        margin-top: 40px;
+    }
+    .img-large__2 {
+        display: none;
+    }
+    .img-large__3 {
+        margin-top: 240px;
+    }
 }
 
 /* SMALL PHONES */
@@ -510,5 +539,13 @@ footer {
     .project__description--sub-title {
         text-align: center;
         margin: 12px 0;
+    }
+    .img-large__1 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+    .img-large__3 {
+        display: none;
     }
 }
