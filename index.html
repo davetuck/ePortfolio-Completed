@@ -11,6 +11,7 @@
       src="https://kit.fontawesome.com/0e4fc7ca9d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </head>
   <body>
     <section id="about-me">
@@ -37,6 +38,26 @@
             >
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a class="menu__link" href="#languages" onclick="closeMenu()">Languages</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="#projects" onclick="closeMenu()">Projects</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="#footer" onclick="closeMenu()">
+              <button class="contact__button">Contact</button></a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="flex flex-1">
         <div class="about-me__info row">
@@ -56,7 +77,7 @@
               <strong class="text--purple">frontend software engineer</strong>
               with a love for collaboration and an insatiable appetite for
               constructing mesmerizing, responsive, and performant web
-              applications - which prioritize UX/UI, and impacting individuals in a
+              applications - which prioritize UX/UI, and impact individuals in a
               positive and inviting way.
             </p>
             <div class="about-me__links">
