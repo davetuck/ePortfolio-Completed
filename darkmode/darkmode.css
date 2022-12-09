@@ -2,6 +2,10 @@
 
 body {
   display: flex;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  height: 0;
+  width: 0;
 }
 
 label {
@@ -58,8 +62,13 @@ label:active:after {
   transition: 0.3s;
 }
 
-input:checked + label + .background {
+input:checked + label + 
+.background {
   background: #242424;
+  color: white;
+}
+
+input:checked + .nav__link--anchor {
   color: white;
 }
 

@@ -13,21 +13,28 @@ nav {
 
 .nav__link--list {
   display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.personal__logo {
+  color:#9362e8;
 }
 
 .nav__link--anchor {
   margin: 0 12px;
-  color: black;
   font-weight: 700;
   transition: all 350ms ease;
+  text-decoration: none;
+  color: #7328f5;
 }
 
 .nav__link--anchor:hover {
-  color: #5d3eff;
+  color: #9e69fa;
 }
 
 .nav__link--anchor-primary {
-  background-color: #242424;
+  background-color: black;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -171,13 +178,21 @@ nav {
 
 .about-me__info--title {
   margin-bottom: 16px;
+  font-size: 36px;
+  margin-top: 0;
   animation: fade-up 650ms 400ms backwards;
 }
 
 .about-me__info--para {
   font-size: 20px;
+  line-height: 1.5;
   margin-bottom: 28px;
+  margin-top: 0;
   animation: fade-up 650ms 600ms backwards;
+}
+
+.text--purple {
+  color: #7328f5;
 }
 
 .about-me__links {
@@ -187,9 +202,10 @@ nav {
 
 .about-me__link {
   font-size: 30px;
-  color: #242424;
+  color: #7328f5;
   padding: 0 16px;
   transition: all 350ms ease;
+  text-decoration: none;
 }
 
 @keyframes fade-up {
@@ -204,7 +220,7 @@ nav {
 }
 
 .about-me__link:hover {
-  color:#5d3eff
+  color:#a476f4
 }
 
 
